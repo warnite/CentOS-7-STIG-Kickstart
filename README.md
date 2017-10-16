@@ -9,3 +9,5 @@ Redacted Info
 I have removed the --url and repo lines for my local mirrors. You will need to replace them with the base repo and epel repos for the install as it will pull the additional packages needed from there.
 
 The kickstart will create a script in /root called RUN_AFTER_INSTALL.sh. This will prompt you to set the bootloader password, the root password, and the hostname.
+
+The /REPO partition created is where we put our local base and epel repos after the install. YOu can just rsync them there and update /etc/yum.repo.d/ to point to them.
